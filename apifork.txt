@@ -1,0 +1,7 @@
+https://github.com/letwhois/bash.git letwhois
+https://github.com/flatedit/bash.git flatedit
+https://github.com/apidsl/bash apidsl
+https://github.com/grabwhois/bash grabwhois
+https://github.com/api-pong/bash apipong
+https://github.com/airscanning/bash airscanning
+https://github.com/multisitemap/bash multisitemap
