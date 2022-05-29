@@ -14,64 +14,95 @@
 
 ## About inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/bash/edit/main/DOCS/ABOUT.md)
 
-creating documentation is not easy in hundreds of small projects, where are dependencies
-we need some simple tool to manage the application from the terminal
-
-this is the inframonit to help You manage the applications
+this is part of apidsl for inframonit ecosystem to help You manage the applications
 
 
 ## Install inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/bash/edit/main/DOCS/INSTALL.md)
 
 
-### START
+install dependencies from file: [apifork.txt](apifork.txt)
 
 ```bash
-./apifork.sh
+./apifork
 ```
 
-### CONTRIBUTION
+install packages for apidsl from file: [apidsl.txt](apidsl.txt)
+
+```bash
+./apidsl.sh install
+```
+
+OR
+install packages inside apidsl
+
+```bash
+cd apifork
+./add https://github.com/letwhois/bash bash letwhois
+./add https://github.com/reactphp/dns php reactphp
+```
+
+
+
+## Start inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/bash/edit/main/DOCS/START.md)
+
+
+get whois data
+
+```bash
+./apidsl.sh 'letwhois.dns("softreck.com")'
+```
+
+```bash
+cat domain.txt | ./letWhois.sh softreck.com
+```
+
+file domain.txt
+```bash
+softreck.com
+```
+
+OUTPUT:
+
+    Softreck &#124; Leadership Through Software Development
+
+
+
+## Contribution [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/flatedit/examples/edit/main/DOCS/CONTRIBUTION.md)
+
+
 
 Install dependencies after created project
 ```bash
 curl https://raw.githubusercontent.com/apifork/bash/main/apifork.sh -o apifork
-echo "apifork.txt" > ".apifork"
-echo "" > "apifork.txt"
+echo "https://github.com/flatedit/bash.git flatedit" > "apifork.dev.txt"
+./apifork install apifork.dev.txt
 ```
 
-Update documentation
+
+Install package list after created project
+```bash
+curl https://raw.githubusercontent.com/apipackage/bash/main/apipackage.sh -o apipackage
+echo "https://github.com/letwhois/bash apidsl/apidsl/bash letwhois" > "apipackage.txt"
+./apipackage install
+```
+
+Edit documentation with flatedit
+```bash
+echo "#!/bin/bash" > "readme"
+echo "./flatedit/readme.sh readme.txt" > "readme"
+echo "./DOCS/MENU.md" >> "readme.txt"
+echo "./DOCS/ABOUT.md" >> "readme.txt"
+echo "./DOCS/FOOT.md" >> "readme.txt"
+```
+
+
+### Update documentation
 
 ```bash
- ./readme.sh
+ ./readme
 ```
 
-### install
-[minsungson/GitHub-cURL: A guide to installing files from GitHub repos in terminal using cURL](https://github.com/minsungson/GitHub-cURL)
-
-```bash
-./apifork.sh install
-```
-OR
-
-```bash
-./apifork.sh
-```
-
-### update
-
-```bash
-./apifork.sh update
-```
-
-
-### remove
-
-```bash
-./apifork.sh remove
-```
-
-
-
-### Config project file
+Config project file
 
 The config file: **.apifork** can be another, e.g. **projects.txt**
 
@@ -79,6 +110,34 @@ Just change the first line in  **.apifork** on **projects.txt**
 ```bash
 projects.txt
 ```
+
+
+### install
+
+[minsungson/GitHub-cURL: A guide to installing files from GitHub repos in terminal using cURL](https://github.com/minsungson/GitHub-cURL)
+
+```bash
+./apifork install
+```
+OR
+
+```bash
+./apifork
+```
+
+### update
+
+```bash
+./apifork update
+```
+
+
+### remove
+
+```bash
+./apifork remove
+```
+
 
 
 # Tags

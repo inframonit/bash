@@ -115,25 +115,7 @@ dist
 
 # TernJS port file
 .tern-port
-letwhois
-flatedit
 apidsl
-letwhois
-flatedit
-apidsl
-grabwhois
-multisitemap
-letwhois
-flatedit
-apidsl
-grabwhois
-multisitemap
-letwhois
-flatedit
-apidsl
-grabwhois
-apipong
-airscanning
 letwhois
 flatedit
 apidsl
@@ -141,3 +123,4 @@ grabwhois
 apipong
 airscanning
 multisitemap
+flatedit

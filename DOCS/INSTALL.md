@@ -2,59 +2,24 @@
 ## Install inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/bash/edit/main/DOCS/INSTALL.md)
 
 
-### START
+install dependencies from file: [apifork.txt](apifork.txt)
 
 ```bash
-./apifork.sh
+./apifork
 ```
 
-### CONTRIBUTION
-
-Install dependencies after created project
-```bash
-curl https://raw.githubusercontent.com/apifork/bash/main/apifork.sh -o apifork
-echo "apifork.txt" > ".apifork"
-echo "" > "apifork.txt"
-```
-
-Update documentation
+install packages for apidsl from file: [apidsl.txt](apidsl.txt)
 
 ```bash
- ./readme.sh
+./apidsl.sh install
 ```
 
-### install
-[minsungson/GitHub-cURL: A guide to installing files from GitHub repos in terminal using cURL](https://github.com/minsungson/GitHub-cURL)
-
-```bash
-./apifork.sh install
-```
 OR
+install packages inside apidsl
 
 ```bash
-./apifork.sh
+cd apifork
+./add https://github.com/letwhois/bash bash letwhois
+./add https://github.com/reactphp/dns php reactphp
 ```
 
-### update
-
-```bash
-./apifork.sh update
-```
-
-
-### remove
-
-```bash
-./apifork.sh remove
-```
-
-
-
-### Config project file
-
-The config file: **.apifork** can be another, e.g. **projects.txt**
-
-Just change the first line in  **.apifork** on **projects.txt**
-```bash
-projects.txt
-```
