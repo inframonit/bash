@@ -5,7 +5,12 @@
 get whois data
 
 ```bash
-./apidsl.sh 'letwhois.dns("softreck.com")'
+./apidsl.sh 'letwhois.ns("softreck.com")'
+```
+
+get title
+```bash
+./apidsl.sh 'http("https://softreck.com").letpath.tag("title")'
 ```
 
 ```bash

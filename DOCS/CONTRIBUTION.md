@@ -2,6 +2,29 @@
 ## Contribution [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/flatedit/examples/edit/main/DOCS/CONTRIBUTION.md)
 
 
+### Update
+
+apifork
+```bash
+curl https://raw.githubusercontent.com/apifork/bash/main/apifork.sh -o apifork
+./apifork update
+```
+
+apipackage
+```bash
+curl https://raw.githubusercontent.com/apipackage/bash/main/apipackage.sh -o apipackage
+./apipackage update
+```
+
+### Remove
+
+
+apifork
+```bash
+./apifork remove
+```
+
+### Install
 
 Install dependencies after created project
 ```bash
@@ -14,35 +37,31 @@ echo "https://github.com/flatedit/bash.git flatedit" > "apifork.dev.txt"
 Install package list after created project
 ```bash
 curl https://raw.githubusercontent.com/apipackage/bash/main/apipackage.sh -o apipackage
-echo "https://github.com/letwhois/bash apidsl/apidsl/bash letwhois" > "apipackage.txt"
+echo "https://github.com/letwhois/bash apidsl/apidsl/bash letwhois" >> "apipackage.txt"
 ./apipackage install
 ```
 
 Edit documentation with flatedit
 ```bash
-echo "#!/bin/bash" > "readme"
-echo "./flatedit/readme.sh readme.txt" > "readme"
-echo "./DOCS/MENU.md" >> "readme.txt"
-echo "./DOCS/ABOUT.md" >> "readme.txt"
-echo "./DOCS/FOOT.md" >> "readme.txt"
+echo "./DOCS/MENU.md" >> "flatedit.txt"
+echo "./DOCS/ABOUT.md" >> "flatedit.txt"
+echo "./DOCS/FOOT.md" >> "flatedit.txt"
 ```
-
 
 ### Update documentation
 
 ```bash
- ./readme
+ ./flatedit
 ```
 
-Config project file
+### Config project file
 
-The config file: **.apifork** can be another, e.g. **projects.txt**
+The config file: **.apifork** can be another, e.g. **apifork.txt**
 
-Just change the first line in  **.apifork** on **projects.txt**
+Just change the first line in  **.apifork** on **apifork.txt**
 ```bash
-projects.txt
+apifork.txt
 ```
-
 
 ### install
 
