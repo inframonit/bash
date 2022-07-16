@@ -1,0 +1,9 @@
+.../docs/docs/DOCS/MENU.md
+.../docs/docs/DOCS/ABOUT.md
+.../docs/docs/DOCS/INSTALL.md
+../docs/DOCS/START.md
+../docs/DOCS/EXAMPLES.md
+../docs/DOCS/TODO.md
+../docs/DOCS/CONTRIBUTION.md
+#../docs/DOCS/DOCS.md
+../docs/DOCS/FOOT.md

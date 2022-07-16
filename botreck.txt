@@ -1,0 +1,12 @@
+premium.pl/home_screenshot.csv
+premium.pl/login_user_screenshot.csv
+premium.pl/login_user_invoices.csv
+premium.pl/login_user_transactions.csv
+premium.pl/login_user_domains.csv
+premium.pl/login_user_history.csv
+aftermarket.pl/home_screenshot.csv
+aftermarket.pl/login_user_screenshot.csv
+aftermarket.pl/login_user_invoices.csv
+aftermarket.pl/login_user_transactions.csv
+aftermarket.pl/login_user_domains.csv
+aftermarket.pl/login_user_history.csv
