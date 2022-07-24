@@ -1,9 +1,8 @@
 ../docs/ABOUT/MENU.md
 ../docs/ABOUT/ABOUT.md
-../docs/DOCS/INSTALL.md
-../DOCS/START.md
-../DOCS/EXAMPLES.md
-../DOCS/TODO.md
-../DOCS/CONTRIBUTION.md
+../docs/START/INSTALL.md
+../docs/START/START.md
+../docs/START/EXAMPLES.md
+../docs/CONTRIBUTION/TODO.md
 #../DOCS/DOCS.md
-../DOCS/FOOT.md
+../docs/DOCS/FOOT.md

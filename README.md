@@ -1,18 +1,16 @@
 
 ![logo.inframonit.com](https://logo.inframonit.com/1/cover.png)
 
-# [bash.inframonit.com](https://bash.inframonit.com/) [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/bash/edit/main/DOCS/MENU.md) 
+# [docs.inframonit.com](https://docs.inframonit.com/) [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/docs/edit/main/ABOUT/MENU.md) 
 
-+ [Example usae cases - examples.inframonit.com](http://examples.inframonit.com)
 + [Blog - www.inframonit.com](https://www.inframonit.com/)
-+ [Documentation - docs.inframonit.com](https://docs.inframonit.com/)
++ [Code - bash.inframonit.com](https://bash.inframonit.com/)
++ [Example use cases - examples.inframonit.com](http://examples.inframonit.com)
 + [Logotyp: logo.inframonit.com](https://logo.inframonit.com/)
 
 + [LICENSE](LICENSE)
 
-
-
-## About inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/bash/edit/main/DOCS/ABOUT.md)
+## About inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/docs/edit/main/ABOUT/ABOUT.md)
 
 this is part of apidsl for inframonit ecosystem to help You manage the applications
 
@@ -30,9 +28,30 @@ Examples of faults detected by InfraMonit:
 6. Unavailability of goods
 7. Failure of payment systems
 
-  
 
-## Install inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/bash/edit/main/DOCS/INSTALL.md)
+# Monitor your positions in SERP
+Track your positions in Search Engine Result Pages for chosen keywords every day. How is your situation in Google compared to yesterday or two days ago? Keep an eye on ranking fluctuations and, if necessary, be ready to take action!
+
+# Keep track of your competitors in Google
+After you run the analysis of your own domain, take a better look at the competitive websites. The more you know about their actions, the better conclusions you can draw for yourself!
+
+
+
+# Warstwa ochronna infrastruktury
+
+
+ApiDSL może być jednym z kierunków użycia może być warstwa ochronna, cyberbezpieczeństwa systemów informatycznych.
+
+Bezpieczeństwa dla systemów istniejących, gdyż tak jak w samochodach oprócz operacyjnych zadań są te diagnostyczne
+
+W sieciach z reguły to zewnętrzne systemy diagnostyczne, w modelu SaaS
+
+Druga warstwa, zaraz po warstwie logiki biznesowej aplikacji, 
+niezależna od wewnętrznych i zewnętrznych, coś pomiędzy, na niezależnej inrastrukturze , jak firewall pomiędzy intranetem i internetem
+
+Również podczas developmentu, jako warstwa służąca do fizycznej diagnostyki całej infrastruktury.
+
+## Install inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/docs/edit/main/DOCS/INSTALL.md)
 
 
 install dependencies from file: [apifork.txt](apifork.txt)
@@ -58,7 +77,7 @@ cd apifork
 
 
 
-## Start inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/bash/edit/main/DOCS/START.md)
+## Start inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/docs/edit/main/DOCS/START.md)
 
 
 get whois data
@@ -87,7 +106,7 @@ OUTPUT:
 
 
 
-## EXAMPLES [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/bash/edit/main/EXAMPLES.md)
+## EXAMPLES [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/docs/edit/main/START/EXAMPLES.md)
 
 Rozwiązanie #apidsl służy pisaniu komend do wcześniej napisanych skryptów, bibliotek, aplikacji. Zamiast ścieżek do plików używamy nazw jako funkcji z parametrem. Korzyść? re-użycie kodu, zamiast refaktoryzacji! APIDSL to jedno z rozwiązań w (pisanej jeszcze) książce #hipermodularyzacja
 
@@ -161,6 +180,11 @@ start using
 ./apidsl 'puppeteer.csv("premium.pl/login_user_screenshot.csv")'
 ```
 
+
+```bash
+./apidsl 'path.file("botreck.txt").split().puppeteer.csv()'
+```
+
 ```bash
 ./apidsl 'puppeteer.csv("premium.pl/login_user_screenshot.csv").split().botreck.puppeter()'
 ```
@@ -172,7 +196,7 @@ start using
 ```
 
 
-## TODO [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/bash/edit/main/TODO.md)
+## TODO [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/docs/edit/CONTRIBUTION/TODO.md)
 
 
 ## TODO
@@ -186,97 +210,6 @@ uruchomić na RPI zero
 
 
 
-## Contribution [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/flatedit/examples/edit/main/DOCS/CONTRIBUTION.md)
-
-
-### Update
-
-apifork
-```bash
-curl https://raw.githubusercontent.com/apifork/bash/main/apifork.sh -o apifork
-./apifork update
-```
-
-apipackage
-```bash
-curl https://raw.githubusercontent.com/apipackage/bash/main/apipackage.sh -o apipackage
-./apipackage update
-```
-
-### Remove
-
-
-apifork
-```bash
-./apifork remove
-```
-
-### Install
-
-Install dependencies after created project
-```bash
-curl https://raw.githubusercontent.com/apifork/bash/main/apifork.sh -o apifork
-echo "https://github.com/flatedit/bash.git flatedit" > "apifork.dev.txt"
-./apifork install apifork.dev.txt
-```
-
-
-Install package list after created project
-```bash
-curl https://raw.githubusercontent.com/apipackage/bash/main/apipackage.sh -o apipackage
-echo "https://github.com/letwhois/bash apidsl/apidsl/bash letwhois" >> "apipackage.txt"
-./apipackage install
-```
-
-Edit documentation with flatedit
-```bash
-echo "./DOCS/MENU.md" >> "flatedit.txt"
-echo "./DOCS/ABOUT.md" >> "flatedit.txt"
-echo "./DOCS/FOOT.md" >> "flatedit.txt"
-```
-
-### Update documentation
-
-```bash
- ./flatedit
-```
-
-### Config project file
-
-The config file: **.apifork** can be another, e.g. **apifork.txt**
-
-Just change the first line in  **.apifork** on **apifork.txt**
-```bash
-apifork.txt
-```
-
-### install
-
-[minsungson/GitHub-cURL: A guide to installing files from GitHub repos in terminal using cURL](https://github.com/minsungson/GitHub-cURL)
-
-```bash
-./apifork install
-```
-OR
-
-```bash
-./apifork
-```
-
-### update
-
-```bash
-./apifork update
-```
-
-
-### remove
-
-```bash
-./apifork remove
-```
-
-
 
 # Tags
 
@@ -285,5 +218,5 @@ OR
 
 ---
 
-+ [edit](https://github.com/inframonit/bash/edit/main/README.md)
++ [edit](https://github.com/inframonit/docs/edit/main/README.md)
 + [inframonit/bash](https://github.com/inframonit/bash)
