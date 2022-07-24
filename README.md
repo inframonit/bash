@@ -29,11 +29,37 @@ Examples of faults detected by InfraMonit:
 7. Failure of payment systems
 
 
+
 # Monitor your positions in SERP
 Track your positions in Search Engine Result Pages for chosen keywords every day. How is your situation in Google compared to yesterday or two days ago? Keep an eye on ranking fluctuations and, if necessary, be ready to take action!
 
 # Keep track of your competitors in Google
 After you run the analysis of your own domain, take a better look at the competitive websites. The more you know about their actions, the better conclusions you can draw for yourself!
+
+
++ hourly checking of any infrastructure with:
+    + apisch + multisitemap
+    + apipong
+    + webpageshot
+
++ current information about infrastructure
+    + registrar
+    + dns records
+    + ns, cloudflare,digitalocean
+    + servers
+    + parkings
+
+
+With multisitemap it's possible to check the infrastructure nad compare every hour what kind of differents are comming and doing some event
+what can help fix bugs or create ticket and send information to support team
+
+
+
+OFFER.
+monitorowanie infrastruktury firm, tych lokalnych również ze skanowaniem mapy sieci i jej replikowaniem
+
+MORE:
+[Wielka rezygnacja specjalistów ds. cyberbezpieczeństwa - CRN](https://crn.pl/aktualnosci/wielka-rezygnacja-specjalistow-ds-cyberbezpieczenstwa/)
 
 
 
@@ -50,6 +76,9 @@ Druga warstwa, zaraz po warstwie logiki biznesowej aplikacji,
 niezależna od wewnętrznych i zewnętrznych, coś pomiędzy, na niezależnej inrastrukturze , jak firewall pomiędzy intranetem i internetem
 
 Również podczas developmentu, jako warstwa służąca do fizycznej diagnostyki całej infrastruktury.
+
+
+
 
 ## Install inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/inframonit/docs/edit/main/DOCS/INSTALL.md)
 
@@ -218,5 +247,4 @@ uruchomić na RPI zero
 
 ---
 
-+ [edit](https://github.com/inframonit/docs/edit/main/README.md)
 + [inframonit/bash](https://github.com/inframonit/bash)
