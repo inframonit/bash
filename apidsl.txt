@@ -1,3 +1,4 @@
 "https://github.com/letcsv/bash" "csv"
 "https://github.com/lettxt/bash" "txt"
 "https://github.com/letwhois/bash" "letwhois"
+"https://github.com/botreck/puppeteer" "puppeteer"

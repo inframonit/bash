@@ -112,7 +112,45 @@ cd apifork
 get whois data
 
 ```bash
-./apidsl.sh 'letwhois.ns("softreck.com")'
+apidsl 'letwhois.ns("softreck.com").print()'
+apidsl 'path.load("domain.txt").letwhois.ns().print()'
+apidsl 'path.load("domain.txt").split().letwhois.ns().print()'
+```
+
+./puppeteer/screenshot.sh http://softreck.com
+
+```bash
+apidsl --get "apidsl.txt"
+apidsl 'path.load("domain.txt").split().letwhois.ns().txt.appendAtTheEnd("$path.load")'
+apidsl 'path.load("domain.txt").split().letwhois.ns().txt.prependToSentence("$path.load , ")'
+apidsl 'let("$dot",".").path.load("domain.txt").split().txt.prepend("https://www$dot").puppeteer.screenshot()'
+apidsl 'let("$dot",".").path.load("domain.txt").split().txt.prepend("http://www$dot").puppeteer.screenshot()'
+apidsl 'path.load("domain.txt").split().txt.prepend("https://").puppeteer.screenshot()'
+```
+
+# wyświetl dokumentację z drugiej linii w kodzie, 
+# zaraz po deklaracji, linia po linii wyjasnieniem branym z komentu i linijki kodu
+```
+apidsl --doc 'path.load("domain.txt").split().txt.prepend("http://").puppeteer.screenshot()'
+apidsl -d 'path.load("domain.txt").split().txt.prepend("http://").puppeteer.screenshot()'
+```
+
+
+URUCHOMIENIE:
+```bash
+apidsl -d 'path.load("domain.txt").split().txt.prepend("http://").puppeteer.screenshot()'
+```
+
+ZASADA DZIAŁANIA
+```bash
+# pobierz listę domen z pliku: domains.txt
+path.load("domains.txt")
+# pobierz kolejną linikę w pętli
+split()
+# dołącz http:// do nazwy domeny
+txt.prepend("http://")
+# zrzuć do pliku widok z adresu
+puppeteer.screenshot()
 ```
 
 get title
@@ -122,6 +160,10 @@ get title
 
 ```bash
 cat domain.txt | ./letWhois.sh softreck.com
+```
+
+```bash
+cat domain.txt | ./letWhois.sh
 ```
 
 file domain.txt
